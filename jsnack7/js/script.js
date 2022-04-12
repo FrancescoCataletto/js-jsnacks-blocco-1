@@ -11,7 +11,9 @@ const num = 2;
 
 let numPot = 1;
 
+const userNumbers = document.getElementById("user-number");
+
 while((num ** numPot) < 1000){
-    console.log(num ** numPot);
+    userNumbers.append(num ** numPot + ',');
     numPot++;
 }
