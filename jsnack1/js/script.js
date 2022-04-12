@@ -9,4 +9,12 @@
 const firstNum = parseInt(prompt("Type first number"));
 const secondNum = parseInt(prompt("Type second number"));
 
-console.log(firstNum, secondNum);
+const outputNum = document.getElementById("number");
+
+if(firstNum > secondNum){
+    outputNum.innerHTML = firstNum;
+}else if(secondNum > firstNum){
+    outputNum.innerHTML = secondNum;
+}else if(firstNum === secondNum){
+    outputNum.innerHTML = "Please type two different numbers";
+}
