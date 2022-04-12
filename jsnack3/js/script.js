@@ -13,15 +13,25 @@ let sum = 0;
 
 const numOutput = document.getElementById("num-output");
 
-for(let i = 0; i < numLimit; i++){
+// for(let i = 0; i < numLimit; i++){
+//     typeNum = parseInt(prompt("Type a number"));
+//     sum += typeNum;
+//     if(isNaN(typeNum)){
+//         alert("Type only numbers");
+//     }
+// }
+
+// numOutput.innerHTML = sum;
+let i = 0;
+
+while(i < numLimit){
     typeNum = parseInt(prompt("Type a number"));
     sum += typeNum;
+    i++;
     if(isNaN(typeNum)){
-        alert("Type only numbers");
+    alert("Type only numbers");
     }
 }
 
 numOutput.innerHTML = sum;
-
-
 
