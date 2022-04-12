@@ -11,4 +11,7 @@ const num = 2;
 
 let numPot = 1;
 
-
+while((num ** numPot) < 1000){
+    console.log(num ** numPot);
+    numPot++;
+}
