@@ -9,3 +9,7 @@ let userNum = parseInt(prompt("Type a number"));
 
 let i = 1;
 
+while(i <= userNum){
+    console.log(i * i * i);
+    i++;
+}
