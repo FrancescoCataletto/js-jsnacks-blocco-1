@@ -5,5 +5,7 @@
 
 */
 
-const userNum = parseInt(prompt("Type a number"));
+let userNum = parseInt(prompt("Type a number"));
+
+let i = 1;
 
