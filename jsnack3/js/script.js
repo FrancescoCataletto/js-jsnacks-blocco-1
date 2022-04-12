@@ -8,4 +8,4 @@
 */
 
 const typeNum = parseInt(prompt("Type a number"));
-
+const numLimit = 5;
