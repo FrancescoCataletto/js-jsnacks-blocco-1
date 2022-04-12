@@ -12,9 +12,9 @@ const secondWord = prompt("Type your second word");
 const outputWord = document.getElementById("output-word");
 
 if(firstWord.length > secondWord.length){
-    console.log(`La parola più lunga è ${firstWord}, la parola più corta è ${secondWord}`)
+    outputWord.innerHTML = (`La parola più lunga è ${firstWord}, la parola più corta è ${secondWord}`);
 }else if(secondWord.length > firstWord.length){
-    console.log(`La parola più lunga è ${secondWord}, la parola più corta è ${firstWord}`)
+    outputWord.innerHTML = (`La parola più lunga è ${secondWord}, la parola più corta è ${firstWord}`);
 }else if( firstWord.length === secondWord.length){
-    console.log("Please insert two words of different length");
+    outputWord.innerHTML = ("Please insert two words of different length");
 }
