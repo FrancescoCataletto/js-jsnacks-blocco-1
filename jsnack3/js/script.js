@@ -16,6 +16,9 @@ const numOutput = document.getElementById("num-output");
 for(let i = 0; i < numLimit; i++){
     typeNum = parseInt(prompt("Type a number"));
     sum += typeNum;
+    if(isNaN(typeNum)){
+        alert("Type only numbers");
+    }
 }
 
 numOutput.innerHTML = sum;
