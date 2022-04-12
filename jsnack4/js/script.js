@@ -47,4 +47,18 @@ const guestArr = [
 
     const guest = prompt("Can you give me your name please");
 
-    
+    const guestOutput = document.getElementById("guest");
+
+    let notGuest = false;
+
+    for(let i = 0; i < guestArr.length; i++){
+        if(guest === guestArr[i]){
+            notGuest = true;
+        }
+    }
+
+    if(notGuest){
+        guestOutput.innerHTML = ("Welcome");
+    }else{
+        guestOutput.innerHTML = ("I'm sorry, you are not in the list."); 
+    }
