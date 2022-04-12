@@ -44,3 +44,7 @@ const guestArr = [
     "Amanjit Singh",
     "Sebastiano Visco"
     ];
+
+    const guest = prompt("Can you give me your name please");
+
+    
