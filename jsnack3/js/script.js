@@ -9,10 +9,10 @@
 
 let typeNum;
 const numLimit = 5;
+let sum = 0;
 
 for(let i = 0; i < numLimit; i++){
     typeNum = parseInt(prompt("Type a number"));
-    console.log(typeNum);
 }
 
 
