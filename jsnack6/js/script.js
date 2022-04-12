@@ -8,8 +8,11 @@
 let userNum = parseInt(prompt("Type a number"));
 
 let i = 1;
+let numCube;
+const userNumbers = document.getElementById("user-numbers");
 
 while(i <= userNum){
-    console.log(i * i * i);
+    numCube = i * i * i;
+    userNumbers.append(`Il cubo di ${i} è ${numCube}, `);
     i++;
 }
