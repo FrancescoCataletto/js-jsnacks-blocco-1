@@ -11,9 +11,14 @@ let typeNum;
 const numLimit = 5;
 let sum = 0;
 
+const numOutput = document.getElementById("num-output");
+
 for(let i = 0; i < numLimit; i++){
     typeNum = parseInt(prompt("Type a number"));
+    sum += typeNum;
 }
+
+console.log(sum);
 
 
 
