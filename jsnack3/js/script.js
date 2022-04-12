@@ -7,5 +7,13 @@
 
 */
 
-const typeNum = parseInt(prompt("Type a number"));
+let typeNum;
 const numLimit = 5;
+
+for(let i = 0; i < numLimit; i++){
+    typeNum = parseInt(prompt("Type a number"));
+    console.log(typeNum);
+}
+
+
+
