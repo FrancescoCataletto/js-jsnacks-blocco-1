@@ -18,7 +18,7 @@ for(let i = 0; i < numLimit; i++){
     sum += typeNum;
 }
 
-console.log(sum);
+numOutput.innerHTML = sum;
 
 
 
