@@ -13,6 +13,8 @@ let sum = 0;
 
 const numOutput = document.getElementById("num-output");
 
+
+// UNCOMMENT THIS SECTION TO USE THE FOR LOOP
 // for(let i = 0; i < numLimit; i++){
 //     typeNum = parseInt(prompt("Type a number"));
 //     sum += typeNum;
@@ -22,6 +24,10 @@ const numOutput = document.getElementById("num-output");
 // }
 
 // numOutput.innerHTML = sum;
+
+
+
+// COMMENT THIS SECTION TO USE THE FOR LOOP
 let i = 0;
 
 while(i < numLimit){
