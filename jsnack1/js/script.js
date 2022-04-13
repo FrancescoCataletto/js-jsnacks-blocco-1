@@ -6,15 +6,20 @@
 */
 
 // VARIABLES TO ASK THE TWO NUMBERS
-const firstNum = parseInt(prompt("Type first number"));
-const secondNum = parseInt(prompt("Type second number"));
+const startBtn = document.getElementById("start-button");
 
-const outputNum = document.getElementById("number");
+startBtn.addEventListener("click", function(){
+    const firstNum = parseInt(prompt("Type first number"));
+    const secondNum = parseInt(prompt("Type second number"));
 
-if(firstNum > secondNum){
-    outputNum.innerHTML = firstNum;
-}else if(secondNum > firstNum){
-    outputNum.innerHTML = secondNum;
-}else if(firstNum === secondNum){
-    outputNum.innerHTML = "Please type two different numbers";
+    const outputNum = document.getElementById("number");
+
+    if(firstNum > secondNum){
+        outputNum.innerHTML = firstNum;
+    }else if(secondNum > firstNum){
+        outputNum.innerHTML = secondNum;
+    }else if(firstNum === secondNum){
+        outputNum.innerHTML = "Please type two different numbers";
 }
+})
+
