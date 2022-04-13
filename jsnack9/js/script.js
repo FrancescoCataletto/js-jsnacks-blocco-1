@@ -15,3 +15,12 @@ let numMedian = 0;
 const sumOfNum = document.getElementById("num-sum");
 const medianOfNum = document.getElementById("num-median");
 
+while(i < 10){
+    userNums = parseInt(prompt("Scrivi un numero"));
+    i++;
+    numSum += userNums;
+    sumOfNum.innerHTML = numSum;
+
+    numMedian = (numSum / 10);
+    medianOfNum.innerHTML = numMedian;
+}
