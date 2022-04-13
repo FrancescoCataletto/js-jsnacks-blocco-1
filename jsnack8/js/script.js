@@ -11,14 +11,16 @@
 
 const userNum = prompt("Inserisci un numero di 4 cifre");
 
+const numbersSum = document.getElementById("num-sum");
+
 let numSum = 0;
 
 if(userNum.length === 4){
     for(let i = 0; i < userNum.length; i++){
         numSum += parseInt(userNum[i]);
-        console.log(numSum);
+        numbersSum.innerHTML = numSum;
     }
 }else{
-    console.log("Inserire un numero di 4 cifre. ")
+    numbersSum.innerHTML = ("Inserire un numero di 4 cifre. ")
 }
 
