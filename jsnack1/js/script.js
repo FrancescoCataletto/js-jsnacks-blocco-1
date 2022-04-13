@@ -7,12 +7,11 @@
 
 // VARIABLES TO ASK THE TWO NUMBERS
 const startBtn = document.getElementById("start-button");
+const outputNum = document.getElementById("number");
 
 startBtn.addEventListener("click", function(){
     const firstNum = parseInt(prompt("Type first number"));
     const secondNum = parseInt(prompt("Type second number"));
-
-    const outputNum = document.getElementById("number");
 
     if(firstNum > secondNum){
         outputNum.innerHTML = firstNum;
