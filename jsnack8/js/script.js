@@ -11,5 +11,9 @@
 
 const userNum = prompt("Inserisci un numero di 4 cifre");
 
-
+if(userNum.length === 4){
+    console.log(parseInt(userNum));
+}else{
+    console.log("Inserire un numero di 4 cifre. ")
+}
 
