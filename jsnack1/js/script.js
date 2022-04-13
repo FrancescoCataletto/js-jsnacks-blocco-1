@@ -19,6 +19,8 @@ startBtn.addEventListener("click", function(){
         outputNum.innerHTML = secondNum;
     }else if(firstNum === secondNum){
         outputNum.innerHTML = "Please type two different numbers";
-}
+    }else if(isNaN(firstNum) || isNaN(secondNum)){
+        outputNum.innerHTML = "Please type only numbers.";
+    }
 })
 
