@@ -23,8 +23,5 @@ if(firstWord.length > secondWord.length){
 
 if(!isNaN(parseInt(firstWord)) || !isNaN(parseInt(secondWord))){
     notNumber = true;
-}
-
-if(notNumber){
-    outputWord.innerHTML = ("Please type only words.")
+    outputWord.innerHTML = ("Please type only words.");
 }
