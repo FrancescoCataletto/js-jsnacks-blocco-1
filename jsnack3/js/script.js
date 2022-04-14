@@ -13,31 +13,30 @@ let sum = 0;
 
 const numOutput = document.getElementById("num-output");
 
-
 // UNCOMMENT THIS SECTION TO USE THE FOR LOOP
-// for(let i = 0; i < numLimit; i++){
-//     typeNum = parseInt(prompt("Type a number"));
-//     sum += typeNum;
-//     if(isNaN(typeNum)){
-//         alert("Type only numbers");
-//     }
-// }
-
-// numOutput.innerHTML = sum;
-
-
-
-// COMMENT THIS SECTION TO USE THE FOR LOOP
-let i = 0;
-
-while(i < numLimit){
+for(let i = 0; i < numLimit; i++){
     typeNum = parseInt(prompt("Type a number"));
-    sum += typeNum;
-    i++;
     if(isNaN(typeNum)){
-    alert("Type only numbers");
+        alert("Type only numbers");
+        i--;
+    }else if(!isNaN(typeNum)){
+        sum += typeNum;
     }
 }
 
 numOutput.innerHTML = sum;
+
+// COMMENT THIS SECTION TO USE THE FOR LOOP
+// let i = 0;
+
+// while(i < numLimit){
+//     typeNum = parseInt(prompt("Type a number"));
+//     sum += typeNum;
+//     i++;
+//     if(isNaN(typeNum)){
+//     alert("Type only numbers");
+//     }
+// }
+
+// numOutput.innerHTML = sum;
 
