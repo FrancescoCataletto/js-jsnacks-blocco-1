@@ -17,8 +17,11 @@ const userNumbers = document.getElementById("user-numbers");
 
 for(let i = 0; i < countLimit; i++){
     userNum = parseInt(prompt("Type a number"));
-    if((userNum % 2) !== 0){
+    if(isNaN(userNum)){
+        alert("Type only numbers.");
+        i--;
+    }else if((userNum % 2) !== 0){
         numArr.push(userNum);
-        userNumbers.innerHTML = numArr;
+        userNumbers.innerHTML = `I numeri dispari sono ${numArr}`;
     }
 }
