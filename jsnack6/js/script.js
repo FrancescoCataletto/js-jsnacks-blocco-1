@@ -7,12 +7,23 @@
 
 let userNum = parseInt(prompt("Type a number"));
 
-let i = 1;
 let numCube;
 const userNumbers = document.getElementById("user-numbers");
 
-while(i <= userNum){
-    numCube = i * i * i;
-    userNumbers.append(`Il cubo di ${i} è ${numCube}, `);
-    i++;
+let notNumber = false;
+
+if(!isNaN(userNum)){
+    notNumber = true;
 }
+
+if(notNumber){
+    for(let i = 1; i <= userNum; i++){
+        numCube = i * i * i;
+        userNumbers.append(`Il cubo di ${i} è ${numCube}, `);
+    }
+}else if(isNaN(userNum)){
+    alert("Type only numbers.");
+}
+
+    
+
