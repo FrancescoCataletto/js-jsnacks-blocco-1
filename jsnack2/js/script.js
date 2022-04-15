@@ -11,15 +11,14 @@ const secondWord = prompt("Type your second word");
 
 const outputWord = document.getElementById("output-word");
 
-let notNumber = false;
+
 if(!isNaN(parseInt(firstWord)) || !isNaN(parseInt(secondWord))){
-    notNumber = true;
     alert("Please don't type numbers.");
-}else if(!notNumber && firstWord.length > secondWord.length){
+}else if(firstWord.length > secondWord.length){
     outputWord.innerHTML = (`La parola più lunga è ${firstWord}, la parola più corta è ${secondWord}`);
-}else if(!notNumber && secondWord.length > firstWord.length){
+}else if(secondWord.length > firstWord.length){
     outputWord.innerHTML = (`La parola più lunga è ${secondWord}, la parola più corta è ${firstWord}`);
-}else if(!notNumber && firstWord.length === secondWord.length){
+}else if(firstWord.length === secondWord.length){
     outputWord.innerHTML = ("Please insert two words of different length");
 }
 
